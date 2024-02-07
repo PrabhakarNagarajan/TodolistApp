@@ -31,7 +31,7 @@ function App() {
   const handleDeleteCompletedTodo = (index) => {
     let reduceCompletedTodo = [...completedTodos];
     reduceCompletedTodo.splice(index, 1);
-    // localStorage.setItem("completedTodos", JSON.stringify(reduceCompletedTodo));
+    localStorage.setItem("completedTodos", JSON.stringify(reduceCompletedTodo));
     setCompletedTodos(reduceCompletedTodo);
   };
 
